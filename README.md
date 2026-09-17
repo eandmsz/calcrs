@@ -75,6 +75,14 @@ If a font is  missing, the default general system font will be used or the one y
 - Area, perimeter, volume, surface formulas
 - Physics, chemistry formulas/constants
 
+## Usage of AI tools
+
+- The code is 100% AI written
+- Every release is tested with also AI written automated test cases and every major release is audited by AI for exploits and vulnerabilities
+- There is a lot of human effort put into manually testing the software from different aspects, verifying the integration with different DEs (KDE, Gnome, MATE, Xfce, Cinnamon, Cosmic, Hyprland) and optimising to be lightweight and run well on different computers from high performance desktop (AMD 9850x3D + NVIDIA 5080) to passively cooled RaspberryPi 2 or Intel Celeron N4500
+- Since this is a well confined project I believe it is possible to reach 100% security (we barely have I/O to the OS and there is no networking involved)
+- Since my main issue with the existing calculators on Linux is the "it's good enough" mindset, I keep the testing to the highest standards until the application is perfectly polished
+
 ## License
 
 GPL-3.0-only. See [LICENSE](LICENSE).
