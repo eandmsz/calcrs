@@ -1,4 +1,4 @@
-# CalcRS - Scientific calculator written in Rust
+# CalcRs - Scientific calculator written in Rust
 
 ## Features:
 
