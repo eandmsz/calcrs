@@ -220,6 +220,7 @@ TODO in future:
 - toggle for show memory contents should be disabled when memory buttons are not visible, or rather: think about: what to do with memory contents? Maybe better to put it back in history?
 - how do we use the accent color from the desktop? We need a way to calculate hover/pressed color from it. Shall we put "accent" in the color field as override? Shall we have a tick box next to each row?
 - add a "restore default settings" button
+- Make theme config to treat empty string and show the inherited color in gray text while not saving them in the config file. Save all color themes in the config.
 - Replace:
 "//! Calc - An easy-to-use stateful scientific calculator focusing on intuitive user experience
 //! Copyright (C) 2027  Andras Vinter"
