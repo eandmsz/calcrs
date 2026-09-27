@@ -6,9 +6,7 @@
 ![Lifecycle: Beta](https://img.shields.io/badge/Lifecycle-Beta-yellow)
 
 # CalcRs
-
 ![CalcRs demo](assets/demo.gif)
-
 </div>
 
 ## Features:
