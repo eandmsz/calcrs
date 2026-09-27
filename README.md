@@ -42,7 +42,7 @@
 
 If a font is  missing, the default general system font will be used or the one you select
 
-## Why we need a better calculator for Linux:
+## Why another calculator for Linux:
 
  Because none of the Linux calculators (KCalc, Gnome Calculator, Galculator, MATE Calculator) match the macOS or Windows calculator's user experience and I'm tired of raising issues to them which will never get fixed because it would either require too much work or it goes against their design philoshopy.
  
