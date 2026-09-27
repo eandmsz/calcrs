@@ -41,7 +41,7 @@
  - Wolfenstein: [zilverstone eYe/FS](https://fontstruct.com/fontstructions/show/485705/zilverstone_eye_fs)
 
 Fonts are not included due to different licensing, but you can always download them for personal use from the links above.
-If a font is  missing, the default general system font will be used or the one you select.
+If a font is not installed, the default general system font will be used or the one you select.
 
 ## Why another calculator for Linux:
 
