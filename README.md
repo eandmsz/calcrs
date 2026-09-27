@@ -2,17 +2,15 @@
 
 ## Features:
 
-- Focusing on simplicity and ease-of-use: Does what you would expect from a calculator.
+- Focusing on simplicity and ease-of-use.
+- Stateful operation which allows repeating last operation, context dependent functions (`√` , `sin` , `log`) can be applied both before or after an operand.
 - Written purely in Rust, using egui and complied with musl target to have a portable executable that works on any Linux. No dependencies or wrappers for C or Python, no glibc version dependency.
 - Decimal arithmetic (38 significant digits precision) for rational numbers.
 - IEEE 754 (15 significant digits precision) for irrational numbers.
-- Intuitive context dependent user input with subscript/superscript support.
-- Stateful operation for an intuitive workflow: can repeat the last operation, functions are context dependent therefore e.g. `√` or `sin` can be applied both before or after an operand.
+- Easy-to-read representation for exponents, base of logarithm, degree of root via subscript/superscript.
 - Logical and aesthetic layout with 20 carefully crafted themes, user configurable fonts and button shapes.
 - Configurable decimal and thousands separator.
-- Hackable button layout via editing config.toml.
 - Proper error messages.
-
 
 ## Recommended fonts to install for the themes:
 
@@ -54,7 +52,8 @@ If a font is  missing, the default general system font will be used or the one y
  - Representing degree of a root or power or base of logarithm is working in an ugly and hard-to-read ASCII way most of the time and it is either incredibly cumbersome to enter an expression into these places or outright impossible.
  - Window scaling is either not possible (MATE Calc) or doesn't scale the text proportionally with the buttons (galculator) or doesn't scale the buttons at all (Gnome Calc). KCalc does it somewhat correctly, though the Deg/Rad switcher and expression display area does not scale.
  - galculator doesn't support decimal arithmetic and therefore fails the `0.1 + 0.2 - 0.3 = 0` test.
- - KCalc continuously evaluating the entered expression, which might sound like a good idea at first, but the problem is that you enter `5 + 3` and you see the result `8` on the screen. Then you enter `/2` and you would expect it will calculate `8 / 2` but instead of getting `4` you will get `6.5` because you are still editing the original expression
+ - KCalc continuously evaluating the entered expression, which might sound like a good idea at first, but the problem is that you enter `5 + 3` and you see the result `8` on the screen. Then you enter `/2` and you would expect it will calculate `8 / 2` but instead of getting `4` you will get `6.5` because you are still editing the original expression.
+ - The existing calculators on Linux seems to be developed with a "good enough" mindset. I want a perfectly polished user experience with very low hardware requirements.
 
 ## Decimal Arithmetic (i128) vs Floating Point IEEE 754 (f64)
 
@@ -77,12 +76,11 @@ If a font is  missing, the default general system font will be used or the one y
 
 ## Usage of AI tools
 
-- The code is 100% AI written
-- Every release is tested with also AI written automated test cases and every major release is audited by AI for exploits and vulnerabilities
+- The code is mostly AI written
+- Every release is tested with automated test cases and every bigger release is audited for exploits and vulnerabilities
 - There is a lot of human effort put into manually testing the software from different aspects, verifying the integration with different DEs (KDE, Gnome, MATE, Xfce, Cinnamon, Cosmic, Hyprland) and optimising to be lightweight and to run well on different computers from high performance desktop (AMD 9850x3D + NVIDIA 5080) to very slow RaspberryPi 2 or Intel Celeron N4500
 - Since this is a well confined project I believe it is possible to reach 100% security (we barely have I/O to the OS and there is no networking involved)
-- My main issue with the existing calculators on Linux is the "good enough" mindset. I keep the testing to the highest standards until the user experience is perfectly polished and the performance is optimised for minimal CPU and Memory usage
 
 ## License
 
-GPL-3.0-only. See [LICENSE](LICENSE).
+GPL-3.0-only. See [LICENSE](LICENSE.md).
