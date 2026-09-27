@@ -1,9 +1,9 @@
 <div align="center">
 
 [![Release](https://img.shields.io/badge/Release-0.2.8-blue)](https://github.com/eandmsz/calcrs/releases)
+![Lifecycle: Beta](https://img.shields.io/badge/Lifecycle-Beta-yellow)
 [![made-with-rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg)](https://www.rust-lang.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html#license-text)
-![Lifecycle: Beta](https://img.shields.io/badge/Lifecycle-Beta-yellow)
 
 # CalcRs
 ![CalcRs demo](assets/demo.gif)
