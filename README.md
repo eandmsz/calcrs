@@ -57,10 +57,10 @@ If a font is  missing, the default general system font will be used or the one y
 
 ## Decimal Arithmetic (i128) vs Floating Point IEEE 754 (f64)
 
- - The problem comes from computers being binary in nature and `0.1` cannot be represented as a finite number in binary and IEEE 754 stores rounded approximations which can result in small errors.
+ - The problem comes from computers being binary in nature and `0.1` cannot be represented as a finite number in binary while IEEE 754 stores rounded approximations which can result in small errors.
  - `0.1 + 0.2 - 0.3` in float64 it will result in a very small number `5.55111512312578*10^(-17)` but not zero, so it is incorrect. Same problem with modulo `0.3 % 0.1` which results in `0.1` instead of zero or `1e16+1-1e16` which results in `0` instead of one, and that is quite literally a day and night difference.
  - Rounding can mitigate the small error for a while, but if you chain together many calculations it will show up sooner or later as a much bigger error.
- - The real solution is to use decimal arithmetic as long as there is no irrational number involved in the calculation e.g.: `0.1 + 1.25³ / 3` is okay, but switch to IEEE 754 as soon as irrational numbers and transcendental functions e.g. `√2 + cos(30) + log10(2) + π` come to the picture, since then we need approximation anyway and float64 gives better accuracy and speed due to hardware accelerated CPU instructions.
+ - The real solution is to use decimal arithmetic as long as there is no irrational number involved in the calculation e.g.: `0.1 + 1.25³ / 3` can be calculated in i128, but we switch to float64 as soon as irrational numbers and transcendental functions e.g. `√2 + cos(30) + log10(2) + π` come to the picture, since then we need approximation anyway and float64 gives better accuracy and speed due to hardware accelerated CPU instructions.
 
 ## Out of scope for this calculator:
 
